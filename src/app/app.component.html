@@ -3,17 +3,27 @@
 </mat-toolbar>
 
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:left; margin: 0 auto; width: 500px">
+<div style="text-align:left; margin: 0 auto; padding-top: 15px; width: 500px">
   <form class="example-form">
-
     <mat-form-field>
-      <input matInput placeholder="Name" value="Jon Snow">
+      <input matInput placeholder="Name" value="Ygritte" #name>
     </mat-form-field>
 
     <mat-form-field style="width: 100%">
-      <input matInput #message maxlength="256" placeholder="Message" value="The only time a man can be brave is when he is afraid.">
+      <input matInput #message maxlength="256" placeholder="Message" value="You know nothing, Jon Snow">
       <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
     </mat-form-field>
-
   </form>
+
+  <button mat-raised-button color="primary" (click)="sendMessage(name.value, message.value)">Send Message</button>
+
+  <mat-list style="margin-top:15px;">
+    <mat-divider></mat-divider>
+    <h3 mat-subheader>Messages</h3>
+    <mat-list-item *ngFor="let msg of messages">
+      <p mat-line style="font-size:.9em">{{msg.name}}</p>
+      <p mat-line style="font-size:1.1em">{{msg.text}}</p>
+      <mat-divider></mat-divider>
+    </mat-list-item>
+  </mat-list>
 </div>
