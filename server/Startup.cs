@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,8 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using RealTimeChat.Hubs;
 
-namespace dotnet_core_signalr
+namespace RealTimeChat
 {
     public class Startup
     {
@@ -40,6 +41,10 @@ namespace dotnet_core_signalr
                 app.UseHsts();
             }
 
+            app.UseSignalR(routes =>
+            {
+              routes.MapHub<ChatHub>("/chatHub");
+            });
             app.UseHttpsRedirection();
             app.UseMvc();
         }

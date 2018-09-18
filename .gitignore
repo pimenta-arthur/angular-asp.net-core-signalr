@@ -12,6 +12,7 @@
 
 # # User-specific folders
 .vscode/
+server/obj/
 
 # Build results
 [Dd]ebug/
