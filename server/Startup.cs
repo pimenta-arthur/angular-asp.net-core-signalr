@@ -28,6 +28,15 @@ namespace RealTimeChat
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+            services.AddCors(options => options.AddPolicy("CorsPolicy",
+            builder =>
+            {
+                builder.AllowAnyMethod()
+                       .AllowAnyHeader()
+                       .AllowAnyOrigin()
+                       .AllowCredentials();
+            }));
+
             services.AddSignalR();
         }
 
@@ -43,6 +52,7 @@ namespace RealTimeChat
                 app.UseHsts();
             }
 
+            app.UseCors("CorsPolicy");
             app.UseSignalR(routes =>
             {
               routes.MapHub<ChatHub>("/chatHub");
