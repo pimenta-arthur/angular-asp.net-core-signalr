@@ -1,27 +1,34 @@
-# AngularApp
+# SignalR Chat
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
+A simple real-time ASP.NET Core SignalR Chat with Angular 6
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Prerequisites
 
-## Code scaffolding
+Make sure you have installed all of the following prerequisites on your development machine:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Install Node.js and the npm package manager (https://nodejs.org)
+* Install .NET Core 2.1.0 SDK or later (https://www.microsoft.com/net)
 
-## Build
+### Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+``` bash
+git clone https://github.com/pimenta-arthur/angular-asp.net-core-signalr.git
 
-## Running unit tests
+cd angular-asp.net-core-signalr
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+npm install
 
-## Running end-to-end tests
+npm install @angular/cli -g
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+npm istall concurrently -g
+```
 
-## Further help
+### Quickstart
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This will build and run the application (development mode).
+
+``` bash
+npm start
+```
