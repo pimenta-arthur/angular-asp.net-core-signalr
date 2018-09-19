@@ -40,8 +40,8 @@ Make sure you have installed all of the following prerequisites on your developm
 
 1. Build and launch the angular app
 
-``` bash
-npm start
-```
+    ``` bash
+    npm start
+    ```
 
 2. Open the browser to http://localhost:4200
