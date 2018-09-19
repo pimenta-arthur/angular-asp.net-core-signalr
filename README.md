@@ -19,7 +19,7 @@ Make sure you have installed all of the following prerequisites on your developm
 4. Install the Concurrently package
 
     ```bash
-    npm istall concurrently -g
+    npm install concurrently -g
     ```
 
 ### Installation
