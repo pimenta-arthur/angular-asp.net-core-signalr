@@ -4,31 +4,44 @@ A simple real-time ASP.NET Core SignalR Chat with Angular 6
 
 ## Getting Started
 
-### Prerequisites
+### Requirements
 
 Make sure you have installed all of the following prerequisites on your development machine:
 
-* Install Node.js and the npm package manager (https://nodejs.org)
-* Install .NET Core 2.1.0 SDK or later (https://www.microsoft.com/net)
+1. Install [Node.js](https://nodejs.org/en/) and the npm package manager
+2. Install [.NET Core 2.1](https://www.microsoft.com/net/download)
+3. . Install the Angular CLI
+
+    ```bash
+    npm install -g @angular/cli
+    ```
+    
+4. Install the Concurrently package
+
+    ```bash
+    npm istall concurrently -g
+    ```
 
 ### Installation
+1. Clone this repository
 
-``` bash
-git clone https://github.com/pimenta-arthur/angular-asp.net-core-signalr.git
+    ```bash
+    git clone https://github.com/pimenta-arthur/angular-asp.net-core-signalr.git
+    cd angular-asp.net-core-signalr
+    ```
 
-cd angular-asp.net-core-signalr
+1. Install the npm packages
 
-npm install
+    ```bash
+    npm install
+    ```
 
-npm install @angular/cli -g
+### Running the app
 
-npm istall concurrently -g
-```
-
-### Quickstart
-
-This will build and run the application (development mode).
+1. Build and launch the angular app
 
 ``` bash
 npm start
 ```
+
+2. Open the browser to http://localhost:4200
