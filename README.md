@@ -10,7 +10,7 @@ Make sure you have installed all of the following prerequisites on your developm
 
 1. Install [Node.js](https://nodejs.org/en/) and the npm package manager
 2. Install [.NET Core 2.1](https://www.microsoft.com/net/download)
-3. . Install the Angular CLI
+3. Install the Angular CLI
 
     ```bash
     npm install -g @angular/cli
