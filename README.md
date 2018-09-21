@@ -2,6 +2,8 @@
 
 A simple real-time ASP.NET Core SignalR Chat with Angular 6
 
+![real-time-chat2](https://user-images.githubusercontent.com/17882425/45881896-e3cc1100-bd82-11e8-8038-b8f5a446491f.gif)
+
 ## Getting Started
 
 ### Requirements
