@@ -38,7 +38,7 @@ Make sure you have installed all of the following prerequisites on your developm
     npm install
     ```
 
-### Running the app
+## Running the app
 
 1. Build and launch the angular app
 
